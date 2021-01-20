@@ -92,6 +92,7 @@
         right: 0;
         bottom: 0;
         background: linear-gradient(120deg, #4f98e0, #5be86f);
+        overflow-y: auto;
     }
     header .open-menu.show {
         display: block;
@@ -885,6 +886,7 @@
     }
     #about .greeting .m-img {
         display: block;
+        width: 100%;
     }
     /* business : block chain */
     #business .block-chain img {
@@ -892,6 +894,7 @@
     }
     #business .block-chain .m-img {
         display: block;
+        width: 100%;
     }
     /* business : mall */
     #business .mall img {
@@ -899,6 +902,7 @@
     }
     #business .mall .m-img {
         display: block;
+        width: 100%;
     }
     /* business : education */
     #business .education img {
@@ -906,5 +910,6 @@
     }
     #business .education .m-img {
         display: block;
+        width: 100%;
     }
 }
