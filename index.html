@@ -54,13 +54,7 @@
         // moblie 감지
         jQuery(document).ready(function ($) {
             if (isMobile) {
-                // header
-                $("header .m-menu").click(function(){
-                    $("header .open-menu").show();
-                });
-                $("header .open-menu .head button").click(function(){
-                    $("header .open-menu").hide();
-                });
+               
                 $(".st-study .info-area").insertAfter(".st-study .study-mockup");
                 
                 $('.st-notice .slide-noti .noti-box .tit').each(function(){ 
@@ -78,11 +72,9 @@
         <header>
             <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
             <a class="link" href="http://bitpos.io/" target="_blank">Bitpos 거래소 바로가기</a>
-            <button class="m-menu"><img src="img/m_menu_icon.png" alt=""></button>
             <div class="open-menu">
                 <div class="head">
-                    <button><img src="img/hide_btn.png" alt=""></button>
-                </div> <!-- end head -->
+                </div> 
                 <div class="mu-list">
                     <div class="mu-box">
                         <p>회사소개</p>
@@ -176,6 +168,15 @@
                     </div> <!-- end depth2 -->
                 </div> <!-- end cm-menu -->
             </nav>
+            <div class="m-menu">
+                <div class="col">
+                    <div class="con">
+                        <div class="bar top"></div>
+                        <div class="bar middle"></div>
+                        <div class="bar bottom"></div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
             <input class="contact" type="button" value="1 : 1 문의하기">
         </header>
         <div id="main-visual">

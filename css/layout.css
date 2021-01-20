@@ -2,6 +2,9 @@
 header .m-menu {
     display: none;
 }
+header .open-menu {
+    display: none;
+}
 header {
     background: #20bc8c;
     height: 85px;

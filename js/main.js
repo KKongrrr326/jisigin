@@ -18,4 +18,21 @@ jQuery(document).ready(function ($) {
         }
     });
 
+
+});
+jQuery(document).ready(function ($) {
+    if (isMobile) {
+        // header
+        $("header .m-menu").click(function () {
+            $(this).toggleClass("hide")
+            $("header .open-menu").toggleClass("show");
+        });
+
+        // location-menu 
+        $(".location-menu .selbox .head p").click(function () {
+            $(this).parent().toggleClass("on")
+            $(this).parent().next().toggleClass("show")
+
+        });
+}
 });

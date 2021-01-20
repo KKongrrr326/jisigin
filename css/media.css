@@ -66,13 +66,6 @@
     }
 }
 
-@media only screen and (max-width:720px) {
-    #main-visual {
-        height: 40rem;
-        background-image: url("../img/m_visual_img.png");
-    }
-}
-
 @media only screen and (max-width:1199px) {
     /* header */
     header {
@@ -90,28 +83,21 @@
     header .contact {
         display: none;
     }
-    header .m-menu {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 2rem;
-        transform: translateY(-50%);
-    }
     header .open-menu {
         z-index: 99;
-        display: block;
+        display: none;
         position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background: linear-gradient(120deg, #4f98e0, #5be86f);
+    }
+    header .open-menu.show {
+        display: block;
     }
     header .open-menu .head {
         height: 7rem;
-        position: relative;
-    } 
-    header .open-menu .head button {
-        position: absolute;
-        top: 50%; right: 2rem;
-        transform: translateY(-50%);
     }
     header .open-menu .mu-list {
         padding: 0 2rem;
@@ -123,7 +109,7 @@
         padding-bottom: 2rem;
     }
     header .open-menu .mu-list .mu-box {
-        border-bottom: 1px solid rgba(255,255,255,.6);
+        border-bottom: 1px solid rgba(255, 255, 255, .6);
         margin-bottom: 2rem;
         padding: 0 .5rem;
     }
@@ -139,6 +125,64 @@
         color: #fff;
         font-size: 1.5rem;
     }
+    header .m-menu {
+        z-index: 999;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+    }
+    .col {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        position: relative;
+    }
+    header .m-menu .con {
+        cursor: pointer;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+    header .m-menu .bar {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background: #fff;
+        margin: 7px auto;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+    header .m-menu.hide .con .top {
+        -webkit-transform: translateY(10px) rotateZ(45deg);
+        -moz-transform: translateY(10px) rotateZ(45deg);
+        -ms-transform: translateY(10px) rotateZ(45deg);
+        -o-transform: translateY(10px) rotateZ(45deg);
+        transform: translateY(10px) rotateZ(45deg);
+    }
+    header .m-menu.hide .con .bottom {
+        -webkit-transform: translateY(-10px) rotateZ(-45deg);
+        -moz-transform: translateY(-10px) rotateZ(-45deg);
+        -ms-transform: translateY(-10px) rotateZ(-45deg);
+        -o-transform: translateY(-10px) rotateZ(-45deg);
+        transform: translateY(-10px) rotateZ(-45deg);
+    }
+    header .m-menu .middle {
+        margin: 0 auto;
+    }
+    header .m-menu.hide .con .middle {
+        width: 0;
+    }
     /* footer */
     footer {
         padding-bottom: 2rem;
@@ -146,7 +190,6 @@
     footer .sns-area {
         clear: both;
         height: 7rem;
-
     }
     footer .sns-area li {
         line-height: 7rem;
@@ -154,7 +197,8 @@
     }
     footer .sns-area li img {
         margin-right: 0;
-        width: 4rem; height: 4rem;
+        width: 4rem;
+        height: 4rem;
     }
     footer .sns-area li p {
         display: none;
@@ -173,7 +217,7 @@
         display: inline-block;
         margin: 0 1rem;
     }
-    footer .m-foot-cate li a{
+    footer .m-foot-cate li a {
         font-size: 1.3rem;
         font-weight: 500;
         color: #333;
@@ -542,5 +586,322 @@
     .st-notice .slide-noti .noti-box .btm-ct .link {
         width: 4.5rem;
         height: 4.5rem;
+    }
+    /* sub- common */
+    .sub-visual {
+        height: 14rem;
+        background-size: auto auto;
+        position: relative;
+    }
+    #about .sub-visual {
+        background-image: url("../img/m_sub_about.png");
+    }
+    #community .sub-visual {
+        background-image: url("../img/m_sub_community.png");
+    }
+    #business .sub-visual {
+        background-image: url("../img/m_sub_business.png");
+    }
+    #consulting .sub-visual {
+        background-image: url("../img/m_sub_consulting.png");
+    }
+    .location-menu {
+        z-index: 33;
+        position: absolute;
+        top: 11.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 2rem;
+        display: block;
+        width: 100%;
+        font-size: 0;
+    }
+    .location-menu .selbox {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+    .location-menu .selbox .head {
+        position: relative;
+        padding: 1.3rem;
+        background: #fff;
+        border: 1px solid #0da371;
+    }
+    .location-menu .depth1 .head {
+        border-right: none;
+    }
+    .location-menu .selbox .head.on {
+        border-bottom: 1px solid #ddd;
+    }
+    .location-menu .selbox .head p {
+        font-size: 1.5rem;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .location-menu .selbox .head p::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 1.5rem;
+        height: 1rem;
+        background-image: url("../img/loacation_arrow.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .location-menu .selbox ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+    .location-menu .selbox ul.show {
+        max-height: 30rem;
+        transition: .3s ease;
+        padding: 1.2rem 0;
+        background: #fff;
+        border: 1px solid #0da371;
+        border-top: none;
+    }
+    .location-menu .selbox ul li a {
+        padding: .75rem 1.3rem;
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #666;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .location-menu .selbox ul li a.on {
+        font-weight: 500;
+        color: #0da371;
+    }
+    .location-menu .depth1 {
+        border-right: none;
+    }
+    .location-menu select {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1.2rem;
+        color: #333;
+        border: none;
+    }
+    .layout .tit-box {
+        display: none;
+    }
+    .content {
+        margin: 0;
+        padding: 7rem 0 5rem 0;
+    }
+    .m-bg {
+        background: #f0f1f8;
+    }
+    /* about : overflow */
+    #about .content .concept {
+        padding: 4rem 2rem 0 2rem;
+    }
+    #about .content .concept .con-tit {
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+    #about .content .concept p {
+        font-size: 1.4rem;
+    }
+    /* about : greeting */
+    #about .greeting .txt-box {
+        padding: 3rem 2rem 0 2rem;
+    }
+    #about .greeting .txt-box p {
+        font-size: 1.4rem;
+    }
+    #about .greeting .txt-box .ceo-nm {
+        font-size: 1.6rem;
+        padding-top: 3rem;
+    }
+    /* about : locaton */
+    #about .location .map {
+        width: 100% !important;
+        height: 25rem;
+    }
+    #about .location table {
+        width: 90%;
+        margin-top: 3rem;
+    }
+    #about .location table th, #about .location table td {
+        font-size: 1.5rem;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+    #about .location table th {
+        padding: 2rem 0 .5rem 1rem;
+    }
+    #about .location table td {
+        padding: .5rem 0 2rem 1rem;
+    }
+    #about .location table ul .bar {
+        margin: 0 .5rem;
+    }
+    /* business : exchange */
+    #business .exchange {
+        font-size: 0;
+    }
+    #business .exchange .pg-info {
+        display: block;
+        width: 100%;
+        padding: 3rem 2rem 0 2rem;
+    }
+    #business .exchange .pg-info .tit {
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+    #business .exchange .pg-info .sub-txt {
+        font-size: 1.4rem;
+        line-height: 1.85rem;
+    }
+    #business .exchange .pg-ct {
+        display: block;
+        width: 100%;
+    }
+    /* business : EUR-license */
+    #business .license {
+        padding: 7rem 1rem 5rem 1rem;
+    }
+    #business .license .outline {
+        background: #fff;
+        padding: 2rem 1.5rem;
+        margin-bottom: 3rem;
+    }
+    #business .license .tit {
+        color: #333;
+        font-size: 1.6rem;
+        padding: 0 0 1.5rem 1rem;
+        border-bottom: 1px solid #999;
+    }
+    #business .license .ct-txt {
+        padding: 1.5rem 1rem;
+        line-height: 1.5;
+    }
+    #business .license .ct-txt p {
+        color: #4b4b4b;
+        font-size: 1.3rem;
+    }
+    #business .license .ct-txt ul li {
+        color: #4b4b4b;
+        font-size: 1.3rem;
+    }
+    #business .license .eur-part {
+        background: #fff;
+        padding: 2rem 1.5rem;
+    }
+    #business .license .eur-part .cm-content {
+        margin-bottom: 3rem;
+    }
+    #business .license .eur-part .cm-content:last-child {
+        margin-bottom: 0;
+    }
+    /* business : siwss_FINMA_consulting */
+    #business .judgment {
+        padding: 7rem 1rem 5rem 1rem;
+    }
+    #business .jd-note {
+        background: #fff;
+        padding: 2rem 1.5rem;
+    }
+    #business .judgment .head {
+        padding: 0 0 1.5rem 1rem;
+        border-bottom: 1px solid #999;
+    }
+    #business .judgment .head p {
+        color: #333;
+        font-size: 1.3rem;
+    }
+    #business .judgment .head .point {
+        display: inline-block;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    #business .judgment .jd-content {
+        padding: 2rem 1rem;
+    }
+    #business .judgment .jd-content .st-tit {
+        font-size: 1.6rem;
+        color: #333;
+        padding-bottom: 1rem;
+    }
+    #business .judgment .jd-content .jd-txt p {
+        color: #4b4b4b;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    #main-visual {
+        height: 40rem;
+        background-image: url("../img/m_visual_img.png");
+    }
+    /* business : exchange */
+    #business .exchange .pg-ct img {
+        display: none;
+    }
+    #business .exchange .pg-ct .m-img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* locaion-menu */
+    .location-menu .selbox .head p {
+        width: 9rem;
+    }
+    .location-menu .selbox ul li a {
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    /* about : history */
+    #about .cp-history img {
+        display: none;
+    }
+    #about .cp-history .m-img {
+        display: block;
+    }
+    /* about : greeting */
+    #about .greeting img {
+        display: none;
+    }
+    #about .greeting .m-img {
+        display: block;
+    }
+    /* business : block chain */
+    #business .block-chain img {
+        display: none;
+    }
+    #business .block-chain .m-img {
+        display: block;
+    }
+    /* business : mall */
+    #business .mall img {
+        display: none;
+    }
+    #business .mall .m-img {
+        display: block;
+    }
+    /* business : education */
+    #business .education img {
+        display: none;
+    }
+    #business .education .m-img {
+        display: block;
     }
 }

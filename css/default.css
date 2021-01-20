@@ -117,7 +117,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("../img/이미지경로.png") no-repeat 98% 50% #fff;
+    background: url("../img/select_arrow.png") no-repeat 95% 50% #fff;
 }
 select::-ms-expand {
     display:none; /* 기존 화살표 없애기 */

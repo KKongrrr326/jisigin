@@ -365,7 +365,6 @@ section .common-ct .ab-txt p {
     margin: 0 5px;
 }
 .st-notice .slide-noti {
-    /* border: 1px solid #000; */
     display: inline-block;
     vertical-align: top;
     width: calc(100% - 260px);
@@ -416,6 +415,9 @@ section .common-ct .ab-txt p {
 
 }
 /* sub- common */
+.location-menu {
+    display: none;
+}
 .sub-visual{
     display: block;
     height: 450px;
@@ -485,11 +487,16 @@ section .common-ct .ab-txt p {
     text-align: center;
 }
 /* about : history */
+#about .cp-history .m-img {
+    display: none;
+}
 #about .cm-his {
     font-size: 0;
-
 }
 /* about : greeting */
+#about .greeting .m-img {
+    display: none;
+}
 #about .greeting .txt-box {
     padding: 50px 50px 0 50px;
 }
@@ -745,6 +752,11 @@ section .common-ct .ab-txt p {
     font-weight: 600;
     color: #1b9b70;
 }
+/* business : block chain */
+
+#business .block-chain .m-img {
+    display: none;
+}
 /* business : exchange */
 #business .exchange {
     font-size: 0;
@@ -773,6 +785,9 @@ section .common-ct .ab-txt p {
     display: inline-block;
     vertical-align: middle;
     width: calc(100% - 600px);
+}
+#business .exchange .pg-ct .m-img {
+    display: none;
 }
 /* business : EUR-license */
 #business .license .outline {
@@ -812,8 +827,8 @@ section .common-ct .ab-txt p {
 #business .license .eur-part .cm-content:last-child {
     margin-bottom: 0;
 }
-/* business */
-#business .judgment {
+/* business : siwss_FINMA_consulting */
+#business .jd-note {
     background: #046855;
     padding: 50px;
 }
@@ -844,7 +859,15 @@ section .common-ct .ab-txt p {
     color: #fff;
     font-size: 15px;
 }
+/* business : mall */
+#business .mall .m-img {
+    display: none;
+}
+/* business : education */
 
+#business .education .m-img {
+    display: none;
+}
 /* consulting - coin */
 #consulting .currency .token {
     font-size: 0;
