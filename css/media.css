@@ -504,6 +504,9 @@
         padding: 1.5rem 0;
         margin: 0 .5rem;
     }
+    .m-aptitude .info-txt .btn-group input:first-child {
+        margin-right: 0;
+    }
     .m-aptitude .info-txt p {
         font-size: 1.4rem;
     }
@@ -868,7 +871,7 @@
     }
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:380px) {
     /* about : history */
     #about .cp-history img {
         display: none;

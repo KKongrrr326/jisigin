@@ -105,7 +105,7 @@ textarea {
 }
 
 input[type="text"],input[type="password"], input[type="email"], input[type="search"],
-input[type="image"], input[type="tel"], textarea{
+input[type="image"], input[type="tel"], input[type="button"], textarea{
     -webkit-appearance: none;
     -webkit-border-radius: 0;
 }
