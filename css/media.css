@@ -1,0 +1,546 @@
+/* media.css */
+
+@media only screen and (min-device-width:320px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media only screen and (min-device-width:360px) {
+    html {
+        font-size: 70.3125%;
+    }
+}
+
+@media only screen and (min-device-width:375px) {
+    html {
+        font-size: 73.2421%;
+    }
+}
+
+@media only screen and (min-device-width:412px) {
+    html {
+        font-size: 80.4688%;
+    }
+}
+
+@media only screen and (min-device-width:414px) {
+    html {
+        font-size: 80.8594%;
+    }
+}
+
+@media only screen and (min-device-width:640px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (min-device-width:768px) {
+    html {
+        font-size: 152%;
+    }
+}
+
+@media only screen and (min-device-width:800px) {
+    html {
+        font-size: 155%;
+    }
+}
+
+@media only screen and (min-device-width:960px) {
+    html {
+        font-size: 188%;
+    }
+}
+
+@media only screen and (min-device-width:1024px) {
+    html {
+        font-size: 198%;
+    }
+}
+
+@media only screen and (min-device-width:1199px) {
+    html {
+        font-size: 220%;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    #main-visual {
+        height: 40rem;
+        background-image: url("../img/m_visual_img.png");
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    /* header */
+    header {
+        height: 6.5rem;
+    }
+    header .logo {
+        left: 1.5rem;
+    }
+    header .link {
+        display: none;
+    }
+    header nav {
+        display: none;
+    }
+    header .contact {
+        display: none;
+    }
+    header .m-menu {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+    }
+    header .open-menu {
+        z-index: 99;
+        display: block;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(120deg, #4f98e0, #5be86f);
+    }
+    header .open-menu .head {
+        height: 7rem;
+        position: relative;
+    } 
+    header .open-menu .head button {
+        position: absolute;
+        top: 50%; right: 2rem;
+        transform: translateY(-50%);
+    }
+    header .open-menu .mu-list {
+        padding: 0 2rem;
+    }
+    header .open-menu .mu-list .mu-box p {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+    header .open-menu .mu-list .mu-box {
+        border-bottom: 1px solid rgba(255,255,255,.6);
+        margin-bottom: 2rem;
+        padding: 0 .5rem;
+    }
+    header .open-menu .mu-list .mu-box ul {
+        padding-bottom: 2rem;
+    }
+    header .open-menu .mu-list .mu-box ul li {
+        display: inline-block;
+        margin-right: 2rem;
+        line-height: 2.5rem;
+    }
+    header .open-menu .mu-list .mu-box ul li a {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    /* footer */
+    footer {
+        padding-bottom: 2rem;
+    }
+    footer .sns-area {
+        clear: both;
+        height: 7rem;
+
+    }
+    footer .sns-area li {
+        line-height: 7rem;
+        margin: 0 1.5rem;
+    }
+    footer .sns-area li img {
+        margin-right: 0;
+        width: 4rem; height: 4rem;
+    }
+    footer .sns-area li p {
+        display: none;
+    }
+    footer .foot-wrap {
+        padding-top: 2.5rem;
+    }
+    footer .foot-cate {
+        display: none;
+    }
+    footer .m-foot-cate {
+        display: block;
+        text-align: center;
+    }
+    footer .m-foot-cate li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+    footer .m-foot-cate li a{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #333;
+    }
+    footer .info-area {
+        font-size: 0;
+    }
+    footer .info-area .company-info {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding: 2rem;
+    }
+    footer .info-area .company-info span {
+        margin: 0 .25rem;
+        font-size: 1rem;
+    }
+    footer .info-area .company-info .cm-txt {
+        font-size: 1.2rem;
+    }
+    footer .info-area .company-info .copyright {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    footer .info-area .qr-code {
+        display: none;
+    }
+    /* main-visual */
+    #main-visual .container {
+        height: 100%;
+    }
+    #main-visual .main-ct {
+        position: absolute;
+        top: 8rem;
+        right: 1.5rem;
+    }
+    #main-visual .main-ct h1 {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        text-align: right;
+    }
+    #main-visual .main-ct .download-btn {
+        text-align: right;
+        float: right;
+        padding: 2rem 0;
+    }
+    #main-visual .main-ct .download-btn a {
+        background: #fff;
+        display: block;
+        width: 16rem;
+        padding: 8px 15px;
+        border-radius: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    #main-visual .main-ct .download-btn img {
+        margin-right: 1rem;
+    }
+    #main-visual .main-ct .download-btn p {
+        font-size: 1.5rem;
+    }
+    #main-visual .main-ct .download-btn p span {
+        font-size: 1.2rem;
+    }
+    /* index : st-about */
+    .st-about {
+        padding: 5rem 0;
+    }
+    section .common-ct {
+        display: block;
+    }
+    section .common-ct .ab-content {
+        margin: 0 1.5rem 2.5rem 1.5rem;
+        position: relative;
+        background: #fff;
+        border-radius: 1.2rem;
+    }
+    section .common-ct .ab-content .ab-img {
+        background: #fff;
+        height: 8rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    section .common-ct .ab-content .ab-img img {
+        display: inline-block;
+        height: 8rem;
+    }
+    section .common-ct .ab-content:last-child {
+        margin-right: 1.5rem;
+    }
+    section .common-ct .ab-txt {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        transform: translateX(0);
+        background: transparent;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+    }
+    section .common-ct .ab-txt h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    section .common-ct .ab-txt p {
+        font-size: 1.3rem;
+        padding-right: 9rem;
+    }
+    /* index : st-azilowon */
+    .st-azilowon {
+        display: inline-block;
+        position: static;
+        padding: 5rem 0 0 0;
+    }
+    .st-azilowon .bg {
+        height: auto;
+        background-image: url("./img/section_bg_01.png");
+    }
+    .st-azilowon .container {
+        height: 100%;
+    }
+    .st-azilowon .ct-txt {
+        width: 100%;
+        position: static;
+        top: initial;
+        left: 0;
+        transform: translateY(0) !important;
+        padding: 0 2rem;
+    }
+    .st-azilowon .ct-txt h1 {
+        font-size: 2.2rem;
+        padding-bottom: 1.5rem;
+    }
+    .st-azilowon .ct-txt p {
+        font-size: 1.34rem;
+        color: #666;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    .st-azilowon .ct-txt .download {
+        padding: 2rem 0 3rem 0;
+        text-align: right;
+    }
+    .st-azilowon .ct-txt input {
+        border-radius: .6rem;
+        padding: 1.2rem 3rem;
+        font-size: 1.4rem;
+    }
+    .st-azilowon .ct-img {
+        position: static;
+        right: initial;
+        bottom: initial;
+    }
+    .st-azilowon .ct-img img {
+        display: none;
+    }
+    .st-azilowon .ct-img .m-img {
+        display: block;
+    }
+    /* index : st-market */
+    .st-market .ct-bg {
+        height: 52rem;
+        background-image: url("../img/m_section_bg_02.png");
+    }
+    .st-market .container {
+        height: 100%;
+    }
+    .st-market .mall-info {
+        text-align: right;
+        position: absolute;
+        top: 8rem;
+        right: 1.5rem;
+        padding-left: 3rem;
+    }
+    .st-market .mall-info h1 {
+        font-size: 2.2rem;
+        padding-bottom: 2rem;
+    }
+    .st-market .mall-info p {
+        font-size: 1.4rem;
+        padding-bottom: 2rem;
+    }
+    .st-market .mall-info p br {
+        display: none;
+    }
+    .st-market .mall-info .visit-btn {
+        margin-top: 3rem;
+        background-image: url("../img/visit_btn.png");
+        width: 15rem;
+        height: 2.5rem;
+        background-size: 100% 100%;
+    }
+    .st-market .mall-info .visit-btn input {
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        border: none;
+        background: transparent;
+        color: #11ce5e;
+        font-size: 1.5rem;
+    }
+    /* index : st-study */
+    .st-study {
+        padding: 5rem 0;
+    }
+    .st-study .container {
+        display: block;
+        align-items: center;
+    }
+    .st-study .info-area {
+        padding: 3rem 2rem;
+    }
+    .st-study .info-area h1 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .st-study .info-area h1 p {
+        font-size: 1.6rem;
+    }
+    .st-study .info-area .sub-txt {
+        font-size: 1.4rem;
+    }
+    .st-study .info-area .btn-group {
+        display: flex;
+    }
+    .st-study .info-area .btn-group input {
+        display: inline-block;
+        flex: 1;
+        font-size: 1.4rem;
+        border: 1px solid #11ce5e;
+        width: auto;
+        padding: 1.3rem 0;
+        margin: 0 .5rem;
+    }
+    .st-study .info-area .btn-group input:first-child {
+        margin-right: 0;
+    }
+    /* index : st-banner */
+    .st-banner {
+        padding: 5rem 0 8rem 0;
+    }
+    .st-banner .container {
+        display: block;
+    }
+    .st-banner .ex-mockup {
+        margin-bottom: 2.5rem;
+    }
+    .st-banner .tit-banner {
+        text-align: center;
+        padding: 0 3rem;
+    }
+    .st-banner .tit-banner h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+    .st-banner .tit-banner p {
+        font-size: 1.5rem;
+    }
+    /* index : m-aptitude */
+    .m-aptitude {
+        height: 100%;
+    }
+    .m-aptitude .info-txt {
+        position: static;
+        top: initial;
+        transform: translateY(0) !important;
+        width: 100%;
+        padding: 36rem 1.5rem 5rem 1.5rem;
+    }
+    .m-aptitude .info-txt h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .m-aptitude .info-txt .btn-group {
+        display: flex;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .m-aptitude .info-txt .btn-group input {
+        flex: 1;
+        font-size: 1.4rem;
+        padding: 1.5rem 0;
+        margin: 0 .5rem;
+    }
+    .m-aptitude .info-txt p {
+        font-size: 1.4rem;
+    }
+    .m-aptitude .m-aptitude-img {
+        position: absolute;
+        top: -7rem;
+        right: 0;
+        width: 100%;
+        height: 40rem;
+        background-size: 100% 100%;
+        float: right;
+    }
+    /* index : st-notice */
+    .st-notice {
+        margin-bottom: 5rem;
+    }
+    .st-notice .st-tit {
+        font-size: 0;
+        padding: 0 2rem;
+    }
+    .st-notice .st-tit h1 {
+        font-size: 2.6rem;
+        color: #11ce5e;
+        width: calc(100% - 8rem);
+    }
+    .st-notice .st-tit h1 br {
+        display: none;
+    }
+    .st-notice .st-tit h1 p {
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+    }
+    .st-notice .st-tit h1::after {
+        display: none;
+    }
+    .st-notice .st-tit .more-btn {
+        font-size: 1.3rem;
+        width: 8rem;
+    }
+    .st-notice .ct-area {
+        font-size: 0;
+        margin-top: 2rem;
+    }
+    .st-notice .ct-area .arrow-btn {
+        padding-left: 1rem;
+        margin-bottom: 3.5rem;
+    }
+    .st-notice .ct-area .arrow-btn button {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 .25rem;
+    }
+    .st-notice .slide-noti {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .st-notice .slide-noti .noti-box {
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    .st-notice .slide-noti .noti-box .tit {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    .st-notice .slide-noti .noti-box .nt-content {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        height: 4.2em;
+        margin-bottom: 1rem;
+    }
+    .st-notice .slide-noti .noti-box .btm-ct {
+        font-size: 0;
+    }
+    .st-notice .slide-noti .noti-box .btm-ct .date {
+        font-size: 1.3rem;
+        width: calc(100% - 4.5rem);
+    }
+    .st-notice .slide-noti .noti-box .btm-ct .link {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
