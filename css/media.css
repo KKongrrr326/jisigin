@@ -1047,6 +1047,7 @@
     }
     #consulting .currency table th:last-child, #consulting .currency table td:last-child {
         width: 50rem;
+        font-size: 1.2rem;
     }
     /* consulting : platform */
     #consulting .platform .info-txt {
