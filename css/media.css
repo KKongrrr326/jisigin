@@ -845,6 +845,222 @@
         color: #4b4b4b;
         font-size: 1.3rem;
     }
+    /* community common */
+    #community .content table {
+        margin-bottom: 3rem;
+    }
+    #community .content table colgroup {
+        display: none;
+    }
+    #community .content table thead {
+        display: none;
+    }
+    #community .content table td:last-child {
+        display: none;
+    }
+    #community .content table .col1 {
+        width: 20%;
+    }
+    #community .content table .col2 {
+        width: 80%;
+    }
+    #community .content table th, #community .content table td {
+        font-size: 1.4rem;
+        height: 5rem;
+    }
+    #community .content table .tit {
+        text-align: left;
+        padding: 0 1.5rem 0 1rem;
+    }
+    #community .content table .tit .cate {
+        margin-right: 1rem;
+    }
+    #community .content table .fixed td .noti {
+        padding: .5rem 1.2rem;
+        font-size: 1.25rem;
+        border-radius: 1.5rem;
+    }
+    /* community : blog */
+    #community .blog .update {
+        display: block;
+        margin-bottom: 0;
+    }
+    #community .blog .update .wrap-ct {
+        flex-basis: 100%;
+        padding: 0 2rem;
+    }
+    #community .blog .update .b-post {
+        margin-bottom: 2.5rem;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 0 1rem rgba(136, 136, 136, .2);
+        border-radius: 1.2rem;
+        font-size: 0;
+    }
+    #community .blog .update .b-post .thum-img {
+        display: inline-block;
+        vertical-align: top;
+        width: 10rem;
+    }
+    #community .blog .update .b-post .thum-img img {
+        height: 7.5rem;
+    }
+    #community .blog .update .b-post .thum-txt {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 10rem);
+        background: #fff;
+        padding: 0 0 0 1.5rem;
+    }
+    #community .blog .update .b-post .thum-txt .tit {
+        font-size: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-bottom: .75rem;
+    }
+    #community .blog .update .b-post .thum-txt .ct-txt {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        height: 2.8em;
+        margin-bottom: 1.5rem;
+    }
+    #community .blog .update .b-post .thum-txt .date {
+        font-size: 1.3rem;
+    }
+    /* community common */
+    #community .details {
+        border-top: none;
+        padding: 7rem 1.5rem 5rem 1.5rem;
+    }
+    #community .details .head {
+        padding: 2rem 1rem;
+        border-top: 1px solid #1b9b70;
+    }
+    #community .details .head h1 {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    #community .details .head .post-info ul li {
+        font-size: 1.2rem;
+    }
+    #community .details .head .post-info .bar {
+        margin: 0 .25rem;
+    }
+    #community .details .post-ct {
+        padding: 2rem 1rem;
+        margin-bottom: 3.5rem;
+    }
+    #community .details .post-ct p {
+        font-size: 1.4rem;
+    }
+    #community .details .post-ct .files {
+        padding: 3rem 0 0 0;
+    }
+    #community .details .post-ct .files ul {
+        padding: 2rem 1.5rem;
+    }
+    #community .details .post-ct .files ul li {
+        font-size: 1.3rem;
+    }
+    #community .details .post-ct .files ul li:first-child {
+        padding-bottom: 1rem;
+    }
+    #community .details .post-ct .files ul li:first-child::after {
+        display: none;
+    }
+    #community .details .post-ct .files ul li:last-child a {
+        word-break: break-all;
+    }
+    #community .details .list-btn input {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+    }
+    /* consulting - coin */
+    #consulting .currency {
+        padding: 7rem 1rem 5rem 1rem;
+    }
+    #consulting .currency .token {
+        font-size: 0;
+        margin-bottom: 2rem;
+    }
+    #consulting .currency .token .cm-box {
+        padding: 1.5rem 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #consulting .currency .token .sc-token {
+        background: #1b9b70;
+        width: 100%;
+        text-align: center;
+    }
+    #consulting .currency .token .sc-token p {
+        font-size: 1.5rem;
+    }
+    #consulting .currency .token .sc-info {
+        width: 100%;
+        font-size: 0;
+    }
+    #consulting .currency .token .sc-info ul {
+        padding: 0 1rem;
+    }
+    #consulting .currency .token .sc-info ul li {
+        font-size: 1.3rem;
+        margin: 0 1rem;
+    }
+    #consulting .currency .token .sc-info .bar {
+        display: none;
+    }
+    #consulting .currency .t-wrap {
+        overflow-x: auto;
+        position: relative;
+    }
+    #consulting .currency table {
+        width: 100%;
+    }
+    #consulting .currency table colgroup {
+        display: none;
+    }
+    #consulting .currency table th, #consulting .currency table td {
+        padding: 1.2rem 0;
+    }
+    #consulting .currency table th {
+        font-size: 1.4rem;
+    }
+    #consulting .currency table td {
+        font-size: 1.2rem;
+        color: #4b4b4b;
+        text-align: center;
+        padding: 1.2rem 1rem;
+    }
+    #consulting .currency table th:first-child, #consulting .currency table td:first-child {
+        width: 15rem;
+    }
+    #consulting .currency table th:nth-child(2), #consulting .currency table td:nth-child(2) {
+        width: 20rem;
+    }
+    #consulting .currency table th:nth-child(3), #consulting .currency table td:nth-child(3) {
+        width: 10rem;
+    }
+    #consulting .currency table th:nth-child(4), #consulting .currency table td:nth-child(4) {
+        width: 25rem;
+    }
+    #consulting .currency table th:last-child, #consulting .currency table td:last-child {
+        width: 50rem;
+    }
+    /* consulting : platform */
+    #consulting .platform .info-txt {
+        padding: 3rem 1.5rem;
+    }
+    #consulting .platform .info-txt .tit {
+        font-size: 1.6rem;
+        padding: 0 0 1.5rem 1rem;
+    }
+    #consulting .platform .info-txt .ct-txt {
+        padding: 1.5rem 1rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
 }
 
 @media only screen and (max-width:720px) {
@@ -860,6 +1076,7 @@
         display: block;
         margin: 0 auto;
     }
+    
 }
 
 @media only screen and (max-width:500px) {
@@ -911,5 +1128,19 @@
     #business .education .m-img {
         display: block;
         width: 100%;
+    }
+    /* consulting : exchange */
+    #consulting .exchange img {
+        display: none;
+    }
+    #consulting .exchange .m-img {
+        display: block;
+    }
+    /* consulting : wallet */
+    #consulting .wallet img {
+        display: none;
+    }
+    #consulting .wallet .m-img {
+        display: block;
     }
 }

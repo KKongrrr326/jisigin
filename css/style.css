@@ -932,6 +932,14 @@ section .common-ct .ab-txt p {
     text-align: center;
     padding: 15px 20px;
 }
+/* consulting : exchange */
+#consulting .exchange .m-img {
+    display: none;
+} 
+/* consulting : wallet */
+#consulting .wallet .m-img {
+    display: none;
+}
 /* consulting : platform */
 #consulting .platform .info-txt {
     padding: 30px;
